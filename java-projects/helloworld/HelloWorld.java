@@ -66,4 +66,14 @@ public class HelloWorld {
         }
        return temp;
     }
+    public static int findNumber(int[] nums, int x) {
+        if (nums.length == 0)
+        return Integer.MAX_VALUE;
+        for (int i=0; i < nums.length; i++)
+        {
+            if(x == nums[i])
+                return i;
+        }
+        return -1;
+    }
 }
