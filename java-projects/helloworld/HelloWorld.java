@@ -46,7 +46,7 @@ public class HelloWorld {
     }
     public static int findMinEven(int[] nums) {
         if (nums.length == 0)
-        return Integer.MAX_VALUE;
+            return Integer.MAX_VALUE;
         int temp = 0;
         for (int i=0; i < nums.length; i++)
         {
@@ -57,7 +57,7 @@ public class HelloWorld {
     }
     public static int findMinDisp(int[] nums) {
         if (nums.length == 0)
-        return Integer.MAX_VALUE;
+            return Integer.MAX_VALUE;
         int temp = 0;
         for (int i=0; i < nums.length; i++)
         {
@@ -68,12 +68,23 @@ public class HelloWorld {
     }
     public static int findNumber(int[] nums, int x) {
         if (nums.length == 0)
-        return Integer.MAX_VALUE;
+            return Integer.MAX_VALUE;
         for (int i=0; i < nums.length; i++)
         {
             if(x == nums[i])
                 return i;
         }
         return -1;
+    }
+    public static boolean checkSumNumbers(int[] nums, int x) {
+        if (nums.length == 0)
+            return false;
+        int temp = 0;
+        for (int i=0; i < nums.length; i++)
+            temp += nums[i];
+        if(temp == x)
+            return true;
+        return false;
+        //return sum == x;
     }
 }
