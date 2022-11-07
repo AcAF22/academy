@@ -55,4 +55,15 @@ public class HelloWorld {
         }
        return temp;
     }
+    public static int findMinDisp(int[] nums) {
+        if (nums.length == 0)
+        return Integer.MAX_VALUE;
+        int temp = 0;
+        for (int i=0; i < nums.length; i++)
+        {
+            if(temp > nums[i] && nums[i]%2 != 0)
+                temp = nums[i];
+        }
+       return temp;
+    }
 }
