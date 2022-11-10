@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class ForeignAccount extends Account{
     private String countryCode;
-    public ForeignAccount(double balance, String countryCode){ //costruttore casa figlia 1 cosa) chiamare costruttore classe madre
+    public ForeignAccount(double balance, String countryCode){ //costruttore classe figlia 1 cosa) chiamare costruttore classe madre
         super(balance);//chiama costruttore casa madre
         this.countryCode = countryCode;
     };
