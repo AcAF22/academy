@@ -4,6 +4,7 @@ public class Customers {
     private int custid;
     private String companyname;
     private String city;
+    private String address;
 
     public Customers(int custid, String companyname, String city) {
         this.custid = custid;
@@ -23,5 +24,7 @@ public class Customers {
         return city;
     }
 
-
+    public String getAddress() {
+        return address;
+    }
 }
