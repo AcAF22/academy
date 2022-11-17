@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Web!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #a2f344;
+            font-size: 2em; /*2 volte del normale*/
+        }
+        p{
+            color: blue;
+        }
+        .fundamental{
+            color: pink;
+        }
+        #pap{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        .c1{/*specificità importanza, classi > tag*/
+            color: pink;
+        }
+        #myh2{/*specificità importanza, id > class > tag*/
+            color: white;
+        }
+        h2.c1{
+            color: black;
+        }
+        div ol{/*dettagli in un div che contiene un ol*/
+            color: aliceblue;
+        }
+        div, ol{/*dettagli ad un div e un ol*/
+            color: red;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: grey;
+            padding: 10px;
+            border: 5px solid black;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
+    <h2 id="myh2" class="c1">Ciao sono h2</h2>
+    <h2 style="color: yellow;">Ciao Bello !!!!</h2>
     <p>Buongiorno World!</p>
+    <div class="myclass">
+        <ul>
+            <li>pippo</li>
+            <li id="pap">paperino</li>
+            <li>pluto</li>
+        </ul>
+        <p>Lorem ipsum dolor <spanc id="myspan" class="fundamental">dit amet</span> consectetur adipisicing elit.</p>
+    </div>
 </body>
 </html>
